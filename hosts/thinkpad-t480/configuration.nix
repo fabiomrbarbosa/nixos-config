@@ -138,7 +138,7 @@
         START_CHARGE_THRESH_BAT0 = "80";
         TLP_DEFAULT_MODE = "BAT";
         CPU_BOOST_ON_AC = "0";
-        CPU_MAX_PERF_ON_AC = "95";
+        CPU_MAX_PERF_ON_AC = "100";
         CPU_MAX_PERF_ON_BAT = "30";
         CPU_SCALING_GOVERNOR_ON_AC = "performance";
         CPU_SCALING_GOVERNOR_ON_BAT = "powersave";
@@ -181,81 +181,6 @@
     };
   };
   virtualisation.spiceUSBRedirection.enable = true;
-
-  # ───────────────────────────────────────────────────────────────────────────────
-  # Programs & Applications
-  # ───────────────────────────────────────────────────────────────────────────────
-  programs.firefox.enable = true;
-  nixpkgs.config.firefox.enableGnomeExtensions = true;
-
-  # ───────────────────────────────────────────────────────────────────────────────
-  # Environment Packages
-  # ───────────────────────────────────────────────────────────────────────────────
-  environment.systemPackages = with pkgs; [
-    qemu 
-
-    obsidian
-    vscode.fhs
-    ghostty 
-    gimp 
-    inkscape 
-    xournalpp
-    vdhcoapp
-    shortwave
-    celluloid
-    handbrake
-
-    adw-gtk3
-    gnome-tweaks 
-    gnome-extension-manager
-    gnomeExtensions.dash-to-dock
-    gnomeExtensions.alphabetical-app-grid
-
-    smartmontools
-    lm_sensors
-    s-tui 
-    ntfs3g
-    dconf2nix
-    pciutils
-    gparted
-    pavucontrol
-    jq
-    cava
-    powertop
-    smartmontools
-    woeusb
-
-    distrobox
-
-    # home-manager
-    vim
-    wget
-    curl
-    openssl_3
-    htop
-    ffmpeg
-    nmap
-    sysstat
-    netcat
-    p7zip
-    stress
-    wakeonlan
-    coreutils-full
-    traceroute
-    gh 
-    git
-    libva-utils
-    usbutils
-    desktop-file-utils 
-    fastfetch 
-    hyfetch
-  ];
-
-  fonts.packages = with pkgs; [
-    corefonts vista-fonts helvetica-neue-lt-std
-    noto-fonts
-    nerd-fonts.jetbrains-mono
-  ]; 
 
   # ───────────────────────────────────────────────────────────────────────────────
   # Nix Configuration

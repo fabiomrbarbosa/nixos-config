@@ -22,6 +22,7 @@
           #nix-flatpak.nixosModules.nix-flatpak 
   
           ./hosts/thinkpad-t480/configuration.nix
+          ./modules/packages.nix
           #./modules/flatpak.nix
         ];
       };
