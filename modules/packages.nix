@@ -23,6 +23,7 @@
     shortwave
     celluloid
     handbrake
+    curtail
 
     adw-gtk3
     morewaita-icon-theme
