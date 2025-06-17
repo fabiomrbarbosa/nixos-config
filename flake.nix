@@ -21,7 +21,6 @@
           nixos-hardware.nixosModules.lenovo-thinkpad-t480
           #nix-flatpak.nixosModules.nix-flatpak 
   
-          ./hosts/thinkpad-t480/hardware-configuration.nix
           ./hosts/thinkpad-t480/configuration.nix
           #./modules/flatpak.nix
         ];
