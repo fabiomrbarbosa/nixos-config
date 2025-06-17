@@ -25,6 +25,7 @@
     handbrake
 
     adw-gtk3
+    morewaita-icon-theme
     gnome-tweaks 
     gnome-extension-manager
     gnomeExtensions.dash-to-dock

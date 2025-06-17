@@ -46,7 +46,7 @@
 
   services.xserver.xkb = {
     layout = "pt";
-    variant = "";
+    variant = "mac";
   };
   console.keyMap = "pt-latin1";
 
