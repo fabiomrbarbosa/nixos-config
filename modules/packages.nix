@@ -32,8 +32,7 @@
   # Environment Packages
   # ───────────────────────────────────────────────────────────────────────────────
   environment.systemPackages = with pkgs; [
-    qemu 
-
+    # GUI Apps 
     celluloid
     curtail
     ghostty
@@ -47,6 +46,45 @@
     vscode.fhs
     xournalpp
 
+    # Command Line 
+    cava
+    coreutils-full
+    curl
+    dconf2nix
+    desktop-file-utils
+    distrobox
+    fastfetch
+    ffmpeg
+    gh
+    git
+    gparted
+    htop
+    hyfetch
+    inxi
+    jq
+    libva-utils
+    lm_sensors
+    netcat
+    nmap
+    ntfs3g
+    openssl_3
+    p7zip
+    pavucontrol
+    pciutils
+    powertop
+    qemu
+    s-tui
+    smartmontools
+    stress
+    sysstat
+    traceroute
+    usbutils
+    vim
+    wakeonlan
+    wget
+    woeusb
+
+    # GNOME
     adw-gtk3
     morewaita-icon-theme
     gnome-tweaks 
@@ -54,45 +92,6 @@
     gnomeExtensions.blur-my-shell
     gnomeExtensions.dash-to-dock
     gnomeExtensions.alphabetical-app-grid
-
-    smartmontools
-    lm_sensors
-    s-tui 
-    ntfs3g
-    dconf2nix
-    pciutils
-    gparted
-    pavucontrol
-    jq
-    cava
-    powertop
-    smartmontools
-    woeusb
-
-    distrobox
-
-    # home-manager
-    vim
-    wget
-    curl
-    openssl_3
-    htop
-    ffmpeg
-    nmap
-    sysstat
-    netcat
-    p7zip
-    stress
-    wakeonlan
-    coreutils-full
-    traceroute
-    gh 
-    git
-    libva-utils
-    usbutils
-    desktop-file-utils 
-    fastfetch 
-    hyfetch
   ];
 
   fonts.packages = with pkgs; [
