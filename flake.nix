@@ -5,7 +5,6 @@
     flake-utils.url = "github:numtide/flake-utils";
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     # nix-flatpak.url = "github:gmodena/nix-flatpak";
-    # zen-browser.url = "github:0xc000022070/zen-browser-flake";      
   };
 
   outputs = { self, nixpkgs, flake-utils, nixos-hardware, ... }:
