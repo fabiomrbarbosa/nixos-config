@@ -128,8 +128,7 @@
     thinkfan = {
       enable = true; # Problems with L450: https://github.com/NixOS/nixpkgs/issues/395739
       levels = [
-        [ "level auto"       0  50  ]
-        [ 6                  50 60  ]
+        [ "level auto"       0  60  ]
         [ 7                  60 70  ]
         [ "level full-speed" 70 150 ]
       ];
