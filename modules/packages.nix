@@ -95,8 +95,12 @@
   ];
 
   fonts.packages = with pkgs; [
-    corefonts vista-fonts helvetica-neue-lt-std
+    corefonts 
+    vista-fonts 
+    helvetica-neue-lt-std
     noto-fonts
     nerd-fonts.jetbrains-mono
+    nerd-fonts.caskaydia-cove
+    nerd-fonts.caskaydia-mono
   ]; 
 }
