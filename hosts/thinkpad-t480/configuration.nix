@@ -101,10 +101,6 @@
     };
   };
 
-  environment.gnome.excludePackages = with pkgs; [
-    cheese epiphany totem gnome-tour gnome-music yelp
-  ];
-
   # ───────────────────────────────────────────────────────────────────────────────
   # Audio
   # ───────────────────────────────────────────────────────────────────────────────
