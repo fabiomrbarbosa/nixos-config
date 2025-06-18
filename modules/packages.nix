@@ -34,17 +34,18 @@
   environment.systemPackages = with pkgs; [
     qemu 
 
-    obsidian
-    vscode.fhs
-    ghostty 
-    gimp 
-    inkscape 
-    xournalpp
-    vdhcoapp
-    shortwave
     celluloid
-    handbrake
     curtail
+    ghostty
+    gimp
+    handbrake
+    inkscape
+    obsidian
+    onlyoffice-bin
+    shortwave
+    vdhcoapp
+    vscode.fhs
+    xournalpp
 
     adw-gtk3
     morewaita-icon-theme
