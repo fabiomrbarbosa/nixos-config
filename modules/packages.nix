@@ -2,6 +2,20 @@
 
 {
   # ───────────────────────────────────────────────────────────────────────────────
+  # Display Server & Desktop Environment
+  # ───────────────────────────────────────────────────────────────────────────────
+  services.xserver = {
+    enable = true;
+    excludePackages = [ pkgs.xterm ];
+
+    displayManager.gdm.enable = true;
+    desktopManager = {
+      gnome.enable = true;
+      xterm.enable = false;
+    };
+  };
+
+  # ───────────────────────────────────────────────────────────────────────────────
   # GNOME
   # ───────────────────────────────────────────────────────────────────────────────
   environment.gnome.excludePackages = with pkgs; [
@@ -36,6 +50,7 @@
     morewaita-icon-theme
     gnome-tweaks 
     gnome-extension-manager
+    gnomeExtensions.blur-my-shell
     gnomeExtensions.dash-to-dock
     gnomeExtensions.alphabetical-app-grid
 

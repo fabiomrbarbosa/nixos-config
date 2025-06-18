@@ -88,20 +88,6 @@
   ]; 
 
   # ───────────────────────────────────────────────────────────────────────────────
-  # Display Server & Desktop Environment
-  # ───────────────────────────────────────────────────────────────────────────────
-  services.xserver = {
-    enable = true;
-    excludePackages = [ pkgs.xterm ];
-
-    displayManager.gdm.enable = true;
-    desktopManager = {
-      gnome.enable = true;
-      xterm.enable = false;
-    };
-  };
-
-  # ───────────────────────────────────────────────────────────────────────────────
   # Audio
   # ───────────────────────────────────────────────────────────────────────────────
   services.pulseaudio.enable = false;
