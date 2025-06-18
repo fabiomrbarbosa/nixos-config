@@ -118,14 +118,11 @@
       settings = {
         STOP_CHARGE_THRESH_BAT0 = "85";
         START_CHARGE_THRESH_BAT0 = "80";
-        TLP_DEFAULT_MODE = "BAT";
         CPU_BOOST_ON_AC = "0";
         CPU_MAX_PERF_ON_AC = "100";
         CPU_MAX_PERF_ON_BAT = "30";
         CPU_SCALING_GOVERNOR_ON_AC = "performance";
         CPU_SCALING_GOVERNOR_ON_BAT = "powersave";
-        PLATFORM_PROFILE_ON_AC = "performance";
-        PLATFORM_PROFILE_ON_BAT = "powersave";
       };
     };
     thinkfan = {
