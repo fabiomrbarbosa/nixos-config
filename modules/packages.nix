@@ -47,7 +47,6 @@
     xournalpp
 
     # Command Line 
-    cava
     coreutils-full
     curl
     dconf2nix
