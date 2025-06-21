@@ -104,6 +104,13 @@
   # Printing
   # ───────────────────────────────────────────────────────────────────────────────
   services.printing.enable = true;
+  services.printing.cups-pdf.enable = true;
+  
+  services.avahi = {
+    enable = true;
+    nssmdns4 = true;
+    openFirewall = true;
+  };
 
   # ───────────────────────────────────────────────────────────────────────────────
   # Power Management
@@ -133,25 +140,7 @@
         [ "level full-speed" 70 150 ]
       ];
       sensors = [
-        #{ type = "tpacpi"; query = "/proc/acpi/ibm/thermal"; }    
-        { type = "hwmon"; query = "/sys/devices/platform/thinkpad_hwmon/hwmon/hwmon7/temp1_input"; }
-        #{ type = "hwmon"; query = "/sys/devices/platform/thinkpad_hwmon/hwmon/hwmon7/temp2_input"; }
-        { type = "hwmon"; query = "/sys/devices/platform/thinkpad_hwmon/hwmon/hwmon7/temp3_input"; }
-        { type = "hwmon"; query = "/sys/devices/platform/thinkpad_hwmon/hwmon/hwmon7/temp4_input"; }
-        { type = "hwmon"; query = "/sys/devices/platform/thinkpad_hwmon/hwmon/hwmon7/temp5_input"; }
-        { type = "hwmon"; query = "/sys/devices/platform/thinkpad_hwmon/hwmon/hwmon7/temp6_input"; }
-        { type = "hwmon"; query = "/sys/devices/platform/thinkpad_hwmon/hwmon/hwmon7/temp7_input"; }
-        { type = "hwmon"; query = "/sys/devices/platform/thinkpad_hwmon/hwmon/hwmon7/temp8_input"; }
-        { type = "hwmon"; query = "/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp1_input"; }
-        { type = "hwmon"; query = "/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp2_input"; }
-        { type = "hwmon"; query = "/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp3_input"; }
-        { type = "hwmon"; query = "/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp4_input"; }
-        { type = "hwmon"; query = "/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp5_input"; }
-        { type = "hwmon"; query = "/sys/devices/pci0000:00/0000:00:1d.2/0000:3d:00.0/nvme/nvme0/hwmon0/temp1_input"; }
-        { type = "hwmon"; query = "/sys/devices/pci0000:00/0000:00:1d.2/0000:3d:00.0/nvme/nvme0/hwmon0/temp2_input"; }
-        { type = "hwmon"; query = "/sys/devices/virtual/thermal/thermal_zone2/hwmon3/temp1_input"; }
-        { type = "hwmon"; query = "/sys/devices/virtual/thermal/thermal_zone3/hwmon4/temp1_input"; }
-        { type = "hwmon"; query = "/sys/devices/virtual/thermal/thermal_zone6/hwmon8/temp1_input"; } 
+        { type = "tpacpi"; query = "/proc/acpi/ibm/thermal"; }    
       ];
     };
   };

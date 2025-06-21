@@ -93,8 +93,9 @@
     gnomeExtensions.alphabetical-app-grid
 
     # WINE
-    wineWowPackages.stable
+    wine
     winetricks
+    bottles
   ];
 
   fonts.packages = with pkgs; [
