@@ -91,6 +91,10 @@
     gnomeExtensions.blur-my-shell
     gnomeExtensions.dash-to-dock
     gnomeExtensions.alphabetical-app-grid
+
+    # WINE
+    wineWowPackages.stable
+    winetricks
   ];
 
   fonts.packages = with pkgs; [
