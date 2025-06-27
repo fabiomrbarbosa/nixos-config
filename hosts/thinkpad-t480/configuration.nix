@@ -104,7 +104,14 @@
   # Printing
   # ───────────────────────────────────────────────────────────────────────────────
   services.printing.enable = true;
-  services.printing.cups-pdf.enable = true;
+  services.printing.cups-pdf = {
+    enable = true;
+    instances = {
+      virtual-pdf = {
+        settings.Out = "\${HOME}/Downloads";
+      };
+    };
+  };
   
   services.avahi = {
     enable = true;

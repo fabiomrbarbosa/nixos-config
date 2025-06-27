@@ -93,7 +93,7 @@
     gnomeExtensions.alphabetical-app-grid
 
     # WINE
-    wine
+    (wineWowPackages.stable.override { waylandSupport = true; })
     winetricks
     bottles
   ];
