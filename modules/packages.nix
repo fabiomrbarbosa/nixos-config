@@ -90,6 +90,7 @@
     gnome-extension-manager
     gnomeExtensions.blur-my-shell
     gnomeExtensions.dash-to-dock
+    gnomeExtensions.hot-edge
     gnomeExtensions.alphabetical-app-grid
 
     # WINE
