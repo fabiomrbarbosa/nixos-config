@@ -95,7 +95,7 @@
     # WINE
     (wineWowPackages.stable.override { waylandSupport = true; })
     winetricks
-    bottles
+    (bottles.override { removeWarningPopup = true; })
   ];
 
   fonts.packages = with pkgs; [
